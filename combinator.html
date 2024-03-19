@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Combinator.html</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Belajar Simple Selektor">
+        <meta name="keywords" content="Belajar CSS Dasar">
+        <link rel="shortcut icon" href="icon.png" sizes="16x16" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ajeng">
+        <meta name="nim" content="233307028">
+    </head>
+    <style>
+       div p { 
+        color: red;
+       }
+       div > p {
+        background-color: yellow;
+       }
+       div + p {
+        background-color: darkgray;
+       }
+       div ~ p {
+        color: cyan;
+       }
+    </style>
+    <body>
+        <div>
+         <p>This is a paragraph. div p adalah combinator paling umum, yang memilih semua elemen p di dalam elemen div.</p>
+         <p>This is a paragraph. div > p lebih spesifik, hanya memilih elemen p yang merupakan anak langsung pertama dari elemen div.</p>
+        </div>
+        <p>This is a paragraph. div + p memilih elemen paragraf yang merupakan saudara langsung yang mengikuti langsung setelah elemen div tersebut.</p>
+        <p>This is a paragraph. div ~ p memilih semua elemen p yang merupakan saudara dari elemen div di dalam elemen parent yang sama.</p>
+        
+    </body>
+    </html>
