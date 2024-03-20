@@ -8,102 +8,124 @@
         <title>tamplate.html</title>
         <link rel="icon" type="png" href="icon.png" sizes="16x16" />
     </head>
-<style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial;
-    }
-    header {
-      background-color: blue;
-      text-align: left;
-      padding: 20px;
-      font-size: 20px;
-      color: white;
-      line-height: 0;
-    }
-    header::first-line {
-      color: yellow;
-    }
-    nav {
-      float: left;
-      width: 30%;
-      height: 600px;
-      border-style: dashed;
-      border-color: rgb(72, 99, 150);
-      margin-top: 10px;
-      margin-bottom: 10px;
-      padding: 20px;
-      padding-top: 0;
-    }
-    nav ul {
-      font-size: 25px;
-      list-style-type: none;
-      padding: 0;
-    }
-    article {
-      float: left;
-      padding: 20px;
-      width: 70%;
-      background-color: white;
-      height: 600px;
-    }
-    section::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    footer {
-      background-color: rgb(72, 99, 150);
-      padding: 10px;
-      text-align: right;
-      color: white;
-    }
-    @media (max-width: 600px) {
-      nav,
-      article {
-        width: 100%;
-        height: auto;
+    <style>
+      * {
+        box-sizing: border-box;
       }
-    }
-    h1 {
-      font-size: 50px;
-    }
-    div p {
-      font-size: 30px;
-    }
- 
- </style>
-  <body>
-    <header>
-      <h3>Halo CSS !</h3>
-      <h2>Ini adalah website CSS saya</h2>
-    </header>
-    <section>
-      <nav>
-        <ul>
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-          <li><a href="#">Menu 4</a></li>
-          <li><a href="#">Menu 5</a></li>
-          <li id><a href="#">Menu 6</a></li>
-        </ul>
-      </nav>
-      <article>
-        <div style="text-align: center">
-          <img src="icon.png" alt="PNM"/>
-          <h1>TI</h1>
-          <p>Politeknik Negeri Madiun</p>
-          <p>Mewujudkan pendidikan tinggi vokasi dalam bidang 
-            Teknologi Informasi dan penerapannya yang berkualitas,
-            inovatif dan berdaya saing Nasional.</p>
-        </div>
-      </article>
-    </section>
-    <footer><center>
-      <p>Tria Wilujeng Rahayu | 233307028 | TI-2A</p></center>
+      body {
+        font-family: Arial;
+      }
+      header {
+        background-color: blue;
+        text-align: left;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        line-height: 0;
+      }
+      header::first-line {
+        color: yellow;
+      }
+      nav {
+        float: left;
+        width: 30%;
+        height: 500px;
+        border-style: dashed;
+        border-color: rgb(72, 99, 150);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+        padding-top: 0;
+      }
+      nav ul {
+        font-size: 25px;
+        list-style-type: none;
+        padding: 0;
+      }
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: white;
+        height: 500px;
+      }
+      a {
+        color: black;
+      }
+      a:hover {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: underline overline;
+        color: #000000;
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer {
+        background-color: rgb(72, 99, 150);
+        padding: 10px;
+        text-align: right;
+        color: black;
+      }
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+      h1 {
+        font-size: 50px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+      p#satu {
+        font-size: 30px;
+        margin-top: 0;
+      }
+      p#dua {
+        font-size: 25px;
+        color: red;
+        margin: 0;
+      }
+    </style>
+    <body>
+      <header>
+        <h3>Halo CSS !</h3>
+        <h2>Ini adalah website CSS saya</h2>
+      </header>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="simple.html">Menu 1</a></li>
+            <li><a href="combinator.html">Menu 2</a></li>
+            <li><a href="pseudo.html">Menu 3</a></li>
+            <li><a href="pseudo_elemen.html">Menu 4</a></li>
+            <li><a href="header.html">Menu 5</a></li>
+            <li><a href="selector.html">Menu 6</a></li>
+            <li><a href="border-style.html">Menu 7</a></li>
+            <li><a href="margin.html">Menu 8</a></li>
+            <li><a href="hyperlink.html">Menu 9</a></li>
+            <li><a href="padding.html">Menu 10</a></li>
+            <li><a href="display.html">Menu 11</a></li>
+            <li><a href="template.html">Menu 12</a></li>
+          </ul>
+        </nav>
+        <article>
+          <div style="text-align: center">
+            <img src="icon.png" alt="PNM" />
+            <h1>TI</h1>
+            <p id="satu">Politeknik Negeri Madiun</p>
+            <p id="dua">Mewujudkan pendidikan tinggi vokasi dalam bidang</p>
+            <p id="dua">Teknologi Informasi dan penerapannya yang berkualitas,</p>
+            <p id="dua">inovatif dan berdaya saing Nasional.</p>
+          </div>
+        </article>
+      </section>
+    <footer>
+      <p>Tria Wilujeng Rahayu | 233307028 | TI-2A</p>
     </footer>
   </body>
 </html>
